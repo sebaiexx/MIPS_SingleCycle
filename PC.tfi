@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+PC instance_name (
+    .Pc_In(Pc_In), 
+    .Pc_Out(Pc_Out), 
+    .clk(clk)
+    );
+
+

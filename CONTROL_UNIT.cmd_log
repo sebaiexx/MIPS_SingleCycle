@@ -1,0 +1,1 @@
+vhdtdtfi -prj MahmoudErfanMohamed_18102150 -o D:/MahmoudErfanMohamed_18102150/CONTROL_UNIT.vhi -module CONTROL_UNIT -template D:/14.7/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CONTROL_UNIT.vhd 

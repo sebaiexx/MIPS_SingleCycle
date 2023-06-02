@@ -1,0 +1,1 @@
+vhdtdtfi -prj MahmoudErfanMohamed_18102150 -o D:/MahmoudErfanMohamed_18102150/Add.vhi -module Add -template D:/14.7/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Add.vhd 

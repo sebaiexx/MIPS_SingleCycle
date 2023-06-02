@@ -1,0 +1,343 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Singlecycle.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Singlecycle.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Singlecycle"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Singlecycle
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\signextend.vhd" into library work
+Parsing entity <signextend>.
+Parsing architecture <Behavioral> of entity <signextend>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\shiftlift2.vhd" into library work
+Parsing entity <shiftlift2>.
+Parsing architecture <Behavioral> of entity <shiftlift2>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\RegisterFiles.vhd" into library work
+Parsing entity <RegisterFiles>.
+Parsing architecture <Behavioral> of entity <registerfiles>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Mux2x1_32.vhd" into library work
+Parsing entity <Mux2x1_32>.
+Parsing architecture <Behavioral> of entity <mux2x1_32>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\IR.vhd" into library work
+Parsing entity <IR>.
+Parsing architecture <Behavioral> of entity <ir>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Data_Memory.vhd" into library work
+Parsing entity <Data_Memory>.
+Parsing architecture <Behavioral> of entity <data_memory>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\CONTROL_UNIT.vhd" into library work
+Parsing entity <CONTROL_UNIT>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\ALU_Control.vhd" into library work
+Parsing entity <ALU_Control>.
+Parsing architecture <Behavioral> of entity <alu_control>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\AddFour.vhd" into library work
+Parsing entity <AddFour>.
+Parsing architecture <Behavioral> of entity <addfour>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Add.vhd" into library work
+Parsing entity <Add>.
+Parsing architecture <Behavioral> of entity <add>.
+Parsing VHDL file "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" into library work
+Parsing entity <Singlecycle>.
+Parsing architecture <Behavioral> of entity <singlecycle>.
+WARNING:HDLCompiler:946 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" Line 199: Actual for formal port sm is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Singlecycle> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PC> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\PC.vhd" Line 24: reg should be on the sensitivity list of the process
+
+Elaborating entity <AddFour> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CONTROL_UNIT> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <IR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shiftlift2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <signextend> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Add> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux2x1_32> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RegisterFiles> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU_Control> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\ALU_Control.vhd" Line 46. Case statement is complete. others clause is never selected
+
+Elaborating entity <Data_Memory> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Data_Memory.vhd" Line 38: memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Data_Memory.vhd" Line 39: memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Data_Memory.vhd" Line 40: memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Data_Memory.vhd" Line 41: memory should be on the sensitivity list of the process
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 149. All outputs of instance <programcounter> of block <PC> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 157. All outputs of instance <pcplusfour> of block <AddFour> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 162. All outputs of instance <ctrl> of block <CONTROL_UNIT> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 173. All outputs of instance <Instruction_Memory> of block <IR> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 178. All outputs of instance <ShiftJump> of block <shiftlift2> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 184. All outputs of instance <SIGN_EXTEND> of block <signextend> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 188. All outputs of instance <ShiftTObranch> of block <shiftlift2> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 192. All outputs of instance <ADD2> of block <Add> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 196. All outputs of instance <Branching_Mux> of block <Mux2x1_32> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 202. All outputs of instance <Jumpmux> of block <Mux2x1_32> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 211. All outputs of instance <regDstM> of block <Mux2x1_32> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 221. All outputs of instance <registers> of block <RegisterFiles> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 233. All outputs of instance <aluSrcM> of block <Mux2x1_32> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 241. All outputs of instance <alu_Unit> of block <ALU> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 249. All outputs of instance <control_Alu> of block <ALU_Control> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 256. All outputs of instance <memory> of block <Data_Memory> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd" line 266. All outputs of instance <memtoRegMux> of block <Mux2x1_32> are unconnected in block <Singlecycle>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Singlecycle>.
+    Related source file is "C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\Singlecycle.vhd".
+    Summary:
+	no macro.
+Unit <Singlecycle> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Singlecycle> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Singlecycle, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Singlecycle.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.94 secs
+ 
+--> 
+
+Total memory usage is 4688428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

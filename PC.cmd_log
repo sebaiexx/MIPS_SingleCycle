@@ -1,0 +1,2 @@
+vhdtdtfi -prj MahmoudErfanMohamed_18102150 -o D:/MahmoudErfanMohamed_18102150/PC.tfi -module PC -template D:/14.7/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work PC.vhd 
+vhdtdtfi -prj MahmoudErfanMohamed_18102150 -o D:/MahmoudErfanMohamed_18102150/PC.vhi -module PC -template D:/14.7/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PC.vhd 

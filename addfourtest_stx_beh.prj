@@ -1,0 +1,2 @@
+vhdl isim_temp "AddFour.vhd"
+vhdl isim_temp "addfourtest.vhd"

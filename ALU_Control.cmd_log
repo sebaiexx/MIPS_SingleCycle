@@ -1,0 +1,1 @@
+vhdtdtfi -prj MahmoudErfanMohamed_18102150 -o D:/MahmoudErfanMohamed_18102150/ALU_Control.vhi -module ALU_Control -template D:/14.7/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ALU_Control.vhd 

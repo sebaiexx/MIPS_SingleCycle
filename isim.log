@@ -1,0 +1,17 @@
+ISim log file
+Running: C:\Users\Sebaiexx\Desktop\MahmoudErfanMohamed_18102150\SingleCycleTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Sebaiexx/Desktop/MahmoudErfanMohamed_18102150/SingleCycleTest_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /singlecycletest/uut/ADD2/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /singlecycletest/uut/registers/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /singlecycletest/uut/registers/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+ERROR: Index 128 out of bound 0 to 127. 
+ERROR: In process IR.vhd:31 
+ 
+INFO: Simulator is stopped.
